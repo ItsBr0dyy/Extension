@@ -117,6 +117,13 @@ export const config = [
 		hint: "If checked, the channel point balance button under the chat input box will be hidden",
 		defaultValue: false,
 	}),
+	// Hide Turbo Button (fixed)
+	declareConfig("layout.hide_turbo_button", "TOGGLE", {
+		path: ["Site Layout", "Twitch Features"],
+		label: "Hide Turbo Button",
+		hint: "If checked, the Twitch Turbo button will be hidden",
+		defaultValue: false,
+	}),
 	// Side bar elements
 	declareConfig("layout.hide_recommended_channels", "TOGGLE", {
 		path: ["Site Layout", "Sidebar"],
@@ -176,6 +183,8 @@ export const config = [
 </script>
 
 <style lang="scss">
+/* Keep all your previous styles exactly as they are */
+
 .seventv-hide-buttons-below-chatbox {
 	div[data-test-selector="chat-input-buttons-container"] {
 		display: none !important;
@@ -340,6 +349,15 @@ export const config = [
 	}
 }
 
+.seventv-hide-turbo-button {
+	a[href*="turbo"],
+	button[data-a-target*="turbo"],
+	div[class*="turbo"] {
+		display: none !important;
+	}
+}
+
+/* Keep the rest of your styles exactly as they are */
 .seventv-hide-channel-point-balance-button {
 	.community-points-summary {
 		display: none !important;
