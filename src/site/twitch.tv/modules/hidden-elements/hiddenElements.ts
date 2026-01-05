@@ -15,6 +15,7 @@ const hideCommunityChallengeContributions = useConfig<boolean>("layout.hide_comm
 const hideRecommendedChannels = useConfig<boolean>("layout.hide_recommended_channels");
 const hideViewersAlsoWatch = useConfig<boolean>("layout.hide_viewers_also_watch");
 const hidePrimeOffers = useConfig<boolean>("layout.hide_prime_offers");
+const hideTurboButton = useConfig<boolean>("layout.hide_turbo_button");
 const hideUnfollowButton = useConfig<boolean>("layout.hide_unfollow_button");
 const hideLiveNotificationButton = useConfig<boolean>("layout.hide_live_notification_button");
 const hideSubscribeButton = useConfig<boolean>("layout.hide_subscribe_button");
@@ -24,6 +25,7 @@ const hideChannelPointBalanceButton = useConfig<boolean>("layout.hide_channel_po
 const hideOnscreenCelebrations = useConfig<boolean>("player.hide_onscreen_celebrations");
 const hideWhispers = useConfig<number>("layout.hide_whispers");
 const hideStories = useConfig<boolean>("layout.hide_stories");
+
 export const hiddenElementSettings: Array<{ class: string; isHidden: Ref<boolean> }> = [
 	{ class: "seventv-hide-leaderboard", isHidden: hideLeaderboard },
 	{ class: "seventv-hide-buttons-below-chatbox", isHidden: hideButtonsBelowChatbox },
@@ -39,6 +41,7 @@ export const hiddenElementSettings: Array<{ class: string; isHidden: Ref<boolean
 	{ class: "seventv-hide-recommended-channels", isHidden: hideRecommendedChannels },
 	{ class: "seventv-hide-viewers-also-watch", isHidden: hideViewersAlsoWatch },
 	{ class: "seventv-hide-prime-offers", isHidden: hidePrimeOffers },
+	{ class: "seventv-hide-turbo-button", isHidden: hideTurboButton },
 	{ class: "seventv-hide-unfollow-button", isHidden: hideUnfollowButton },
 	{ class: "seventv-hide-live-notification-button", isHidden: hideLiveNotificationButton },
 	{ class: "seventv-hide-subscribe-button", isHidden: hideSubscribeButton },
