@@ -1,6 +1,7 @@
 ### 3.1.15.1000
 
 -   Added required Firefox built-in consent metadata to the manifest
+- 	Added new feature to hide the turbo button on Twitch
 
 ### 3.1.14.1000
 
